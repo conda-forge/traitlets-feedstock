@@ -1,4 +1,5 @@
-{% set version = "4.2.2" %}
+{% set version = "4.3.0" %}
+{% set sha256 = "8a33cb7b1ef47f2d6dc16e9cf971217d5a4882a3541c070e78a0e8e8edcb3f82" %}
 
 package:
   name: traitlets
@@ -7,7 +8,7 @@ package:
 source:
   fn: traitlets-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/t/traitlets/traitlets-{{ version }}.tar.gz
-  md5: d0725f9818bd9e112a6531da26d433b8
+  sha256: {{ sha256 }}
 
 build:
   number: 0
@@ -16,11 +17,13 @@ build:
 requirements:
   build:
     - python
+    - pip
   run:
     - python
     - ipython_genutils
+    - six
     - decorator
-    # enum34 and six will be added in a later release
+    - enum34  # [py2k or py33]
 
 test:
   imports:
@@ -30,10 +33,11 @@ test:
 about:
   home: http://ipython.org/
   license: BSD 3-clause
-  summary: configuration system for Python applications
+  summary: Configuration system for Python applications
 
 extra:
   recipe-maintainers:
     - jakirkham
     - pelson
     - minrk
+    - SylvainCorlay
