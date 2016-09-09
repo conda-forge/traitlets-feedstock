@@ -22,7 +22,7 @@ requirements:
     - ipython_genutils
     - six
     - decorator
-    - enum34  # [py27]
+    - enum34  # [py2k or py33]
 
 test:
   imports:
