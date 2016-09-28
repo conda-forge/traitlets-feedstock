@@ -1,5 +1,5 @@
-{% set version = "4.3.0" %}
-{% set sha256 = "8a33cb7b1ef47f2d6dc16e9cf971217d5a4882a3541c070e78a0e8e8edcb3f82" %}
+{% set version = "4.3.1" %}
+{% set sha256 = "ba8c94323ccbe8fd792e45d8efe8c95d3e0744cc8c085295b607552ab573724c" %}
 
 package:
   name: traitlets
