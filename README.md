@@ -11,6 +11,18 @@ Summary: Configuration system for Python applications
 
 
 
+Current build status
+====================
+
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/traitlets-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/traitlets-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/traitlets-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/traitlets-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/traitlets-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/traitlets-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/traitlets/badges/version.svg)](https://anaconda.org/conda-forge/traitlets)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/traitlets/badges/downloads.svg)](https://anaconda.org/conda-forge/traitlets)
+
 Installing traitlets
 ====================
 
@@ -31,7 +43,6 @@ It is possible to list all of the versions of `traitlets` available on your plat
 ```
 conda search traitlets --channel conda-forge
 ```
-
 
 
 About conda-forge
@@ -67,18 +78,6 @@ Terminology
 
 **conda-forge** - the place where the feedstock and smithy live and work to
                   produce the finished article (built conda distributions)
-
-Current build status
-====================
-
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/traitlets-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/traitlets-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/traitlets-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/traitlets-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/traitlets-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/traitlets-feedstock/branch/master)
-
-Current release info
-====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/traitlets/badges/version.svg)](https://anaconda.org/conda-forge/traitlets)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/traitlets/badges/downloads.svg)](https://anaconda.org/conda-forge/traitlets)
 
 
 Updating traitlets-feedstock
