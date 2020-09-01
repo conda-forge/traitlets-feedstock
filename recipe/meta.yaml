@@ -9,6 +9,7 @@ source:
   sha256: 0d9c4005506b306b0a99551e96174b8bedc675c2dd048f92b3bbbb7d86ac93a9
 
 build:
+  skip: true  # [py<37]
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
@@ -19,9 +20,6 @@ requirements:
   run:
     - python
     - ipython_genutils
-    - six
-    - decorator
-    - enum34  # [py<34]
 
 test:
   imports:
@@ -29,7 +27,7 @@ test:
     - traitlets.config
 
 about:
-  home: http://ipython.org/
+  home: http://traitlets.readthedocs.org/
   license: BSD-3-Clause
   license_file: COPYING.md
   summary: Configuration system for Python applications
@@ -41,3 +39,6 @@ extra:
     - minrk
     - SylvainCorlay
     - ocefpaf
+    - Carreau
+    - takluyver
+    - rmorshea
