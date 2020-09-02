@@ -9,16 +9,17 @@ source:
   sha256: 0d9c4005506b306b0a99551e96174b8bedc675c2dd048f92b3bbbb7d86ac93a9
 
 build:
-  skip: true  # [py<37]
+  noarch: python
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   build:
     - python
+    - python >=3.7
     - pip
   run:
-    - python
+    - python >=3.7
     - ipython_genutils
 
 test:
@@ -42,3 +43,5 @@ extra:
     - Carreau
     - takluyver
     - rmorshea
+    - blink1073
+    - zsailer
