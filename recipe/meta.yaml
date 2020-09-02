@@ -10,16 +10,16 @@ source:
 
 build:
   noarch: python
-  skip: true  # [py<37]
   number: 0
   script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
 
 requirements:
   build:
     - python
+    - python >=3.7
     - pip
   run:
-    - python
+    - python >=3.7
     - ipython_genutils
 
 test:
@@ -43,3 +43,5 @@ extra:
     - Carreau
     - takluyver
     - rmorshea
+    - blink1073
+    - zsailer
