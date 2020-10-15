@@ -1,4 +1,4 @@
-{% set version = "5.0.4" %}
+{% set version = "5.0.5" %}
 
 package:
   name: traitlets
@@ -6,16 +6,15 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/traitlets/traitlets-{{ version }}.tar.gz
-  sha256: 86c9351f94f95de9db8a04ad8e892da299a088a64fd283f9f6f18770ae5eae1b
+  sha256: 178f4ce988f69189f7e523337a3e11d91c786ded9360174a3d9ca83e79bc5396
 
 build:
+  number: 0
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
     - python >=3.7
     - pip
   run:
@@ -26,6 +25,10 @@ test:
   imports:
     - traitlets
     - traitlets.config
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://traitlets.readthedocs.org/
