@@ -5,11 +5,9 @@ Home: http://traitlets.readthedocs.org/
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/traitlets-feedstock/blob/master/LICENSE.txt)
 
 Summary: Configuration system for Python applications
-
-
 
 Current build status
 ====================
