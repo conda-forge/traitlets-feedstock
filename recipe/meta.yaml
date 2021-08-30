@@ -1,4 +1,4 @@
-{% set version = "5.0.5" %}
+{% set version = "5.1.0" %}
 
 package:
   name: traitlets
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/t/traitlets/traitlets-{{ version }}.tar.gz
-  sha256: 178f4ce988f69189f7e523337a3e11d91c786ded9360174a3d9ca83e79bc5396
+  sha256: bd382d7ea181fbbcce157c133db9a829ce06edffe097bcf3ab945b435452b46d
 
 build:
   number: 0
