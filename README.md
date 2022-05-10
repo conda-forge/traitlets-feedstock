@@ -1,13 +1,17 @@
 About traitlets
 ===============
 
-Home: http://traitlets.readthedocs.org/
+Home: https://traitlets.readthedocs.org
 
 Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/traitlets-feedstock/blob/main/LICENSE.txt)
 
 Summary: Configuration system for Python applications
+
+Development: https://github.com/ipython/traitlets
+
+Documentation: https://traitlets.readthedocs.org
 
 Current build status
 ====================
