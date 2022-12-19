@@ -31,7 +31,8 @@ test:
   requires:
     - pip
     - pytest-cov
-    - argcomplete
+    - pytest-mock
+    - argcomplete>=2.0
 
 about:
   home: https://traitlets.readthedocs.org
