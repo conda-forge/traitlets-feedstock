@@ -17,9 +17,9 @@ requirements:
   host:
     - hatchling >=1.5
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
+    - python >=3.8
 
 test:
   imports:
@@ -30,9 +30,10 @@ test:
     - pytest -vv --pyargs traitlets --cov traitlets --no-cov-on-fail --cov-report term-missing:skip-covered --cov-fail-under=92
   requires:
     - pip
+    - pytest>=7.0
     - pytest-cov
     - pytest-mock
-    - argcomplete>=2.0
+    - argcomplete>=3.0.3
 
 about:
   home: https://traitlets.readthedocs.org
