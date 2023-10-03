@@ -37,10 +37,11 @@ test:
   requires:
     - argcomplete >=3.0.3
     - coverage
-    - mypy
+    - mypy >=1.5.1
     - pip
-    - pytest >=7.0
+    - pytest >=7.0,<7.5
     - pytest-mock
+    - pytest-mypy-testing
 
 about:
   home: https://traitlets.readthedocs.org
