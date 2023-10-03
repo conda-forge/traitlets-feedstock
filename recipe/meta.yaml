@@ -24,6 +24,7 @@ requirements:
 test:
   source_files:
     - tests
+    - pyproject.toml
   imports:
     - traitlets
     - traitlets.config
