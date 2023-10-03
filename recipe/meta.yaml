@@ -22,14 +22,18 @@ requirements:
     - python >=3.8
 
 test:
+  source_files:
+    - tests
   imports:
     - traitlets
     - traitlets.config
   commands:
     - pip check
-    - pytest -vv --pyargs traitlets --cov=traitlets --no-cov-on-fail --cov-report term-missing:skip-covered --cov-fail-under=88
+    - pytest -vv --cov=traitlets --cov-branch --no-cov-on-fail --cov-report term-missing:skip-covered --cov-fail-under=88
+    - mypy -p traitlets
   requires:
     - argcomplete >=3.0.3
+    - mypy
     - pip
     - pytest >=7.0
     - pytest-cov
