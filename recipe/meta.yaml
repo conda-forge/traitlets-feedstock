@@ -40,7 +40,7 @@ test:
     - coverage
     - mypy >=1.5.1
     - pip
-    - pytest >=7.0,<7.5
+    - pytest >=7.0,<8.2
     - pytest-mock
     - pytest-mypy-testing
 
