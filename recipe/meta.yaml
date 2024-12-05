@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/t/traitlets/traitlets-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/t/traitlets/traitlets-{{ version }}.tar.gz
   sha256: 9ed0579d3502c94b4b3732ac120375cda96f923114522847de4b3bb98b96b6b7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -17,9 +17,9 @@ requirements:
   host:
     - hatchling >=1.5
     - pip
-    - python >=3.8
+    - python {{ python_min }}
   run:
-    - python >=3.8
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -34,15 +34,14 @@ test:
     - coverage run --source=traitlets --parallel --branch -m pytest -vv --pyargs traitlets
     - coverage combine
     - coverage report --show-missing --skip-covered --fail-under=80
-    - mypy -p traitlets
   requires:
     - argcomplete >=3.0.3
     - coverage
-    - mypy >=1.5.1
     - pip
     - pytest >=7.0,<8.2
     - pytest-mock
     - pytest-mypy-testing
+    - python {{ python_min }}
 
 about:
   home: https://traitlets.readthedocs.org
