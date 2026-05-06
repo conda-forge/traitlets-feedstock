@@ -43,6 +43,7 @@ tests:
       run:
         - argcomplete >=3.0.3
         - coverage
+        - mypy >=1.7.0,<1.19
         - pip
         - pytest >=7.0,<8.2
         - pytest-mock
