@@ -41,11 +41,11 @@ tests:
         - pyproject.toml
     requirements:
       run:
-        - argcomplete >=3.0.3
+        - argcomplete >=3.5.2
         - coverage
-        - mypy >=1.7.0,<1.19
+        - mypy >=2.0
         - pip
-        - pytest >=7.0,<8.2
+        - pytest >=7.0,<10
         - pytest-mock
         - pytest-mypy-testing
         - python ${{ python_min }}.*
