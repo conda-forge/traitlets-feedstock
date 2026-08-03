@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "5.16.0"
+  version: "5.16.1"
   python_check_max: "3.14"
 
 package:
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/t/traitlets/traitlets-${{ version }}.tar.gz
-  sha256: 7de0a3fabaf5971ff15c8905545f9febfa850309fb8e86e1b42bdb5b46b293ed
+  sha256: ed900c2b631aa3a112811139fa97b8d2c3bad5e989656bba4b7e52c7852c18c1
 
 build:
   number: 0
